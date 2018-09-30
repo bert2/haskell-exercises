@@ -21,20 +21,23 @@ directions :: [Point] -> [Direction]
 directions = map direction . win3
 
 convexHull :: [Point] -> [Point]
-convexHull ps = reverse $ tail $ foldl' addOuter [] $ close ps'
-    where s = minimumOn swap ps
-          rest = filter (/=s) ps
-          ps' = s : sortBy (polarOrderFrom s) rest
-          addOuter (p2:p1:ps'') p3 | isLeftTurn (p1,p2,p3) = p3:p2:p1:ps''
+convexHull ps =
+    let s = minimumOn swap ps
+        rest = filter (/=s) ps
+        ps' = s : sortBy (polarOrderFrom s) rest
+    in reverse $ tail $ foldl' addOuter [] $ close ps'
+    where addOuter (p2:p1:ps'') p3 | isLeftTurn (p1,p2,p3) = p3:p2:p1:ps''
                                    | otherwise             = addOuter (p1:ps'') p3
           addOuter ps''         p  = p:ps''
 
+-- less complicated, but also less efficient.
 convexHull' :: [Point] -> [Point]
-convexHull' ps = converge delInner ps'
-    where s = minimumOn swap ps
-          rest = filter (/=s) ps
-          ps' = s : sortBy (polarOrderFrom s) rest
-          delInner ps'' = s : [middle l | l <- win3 $ close ps'', isLeftTurn l]
+convexHull' ps =
+    let s = minimumOn swap ps
+        rest = filter (/=s) ps
+        ps' = s : sortBy (polarOrderFrom s) rest
+    in converge delInner ps'
+    where delInner ps'' = s : [middle l | l <- win3 $ close ps'', isLeftTurn l]
 
 vec :: Point -> Point -> Vector
 vec (x1, y1) (x2, y2) = (x2 - x1, y2 - y1)
