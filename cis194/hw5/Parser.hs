@@ -2,10 +2,10 @@
 -- dependency on hackage. Builds an explicit representation of the
 -- syntax tree to fold over using client-supplied semantics.
 module Parser (parseExp) where
+import Prelude hiding (toInteger)
 import Control.Applicative hiding (Const)
 import Control.Arrow
 import Data.Char
-import Data.Monoid
 import Data.List (foldl')
 
 -- Building block of a computation with some state of type @s@
@@ -41,7 +41,7 @@ type Parser a = State String a
 digit :: Parser Integer
 digit = State $ parseDigit
     where parseDigit [] = Nothing
-          parseDigit s@(c:cs)
+          parseDigit (c:cs)
               | isDigit c = Just (fromIntegral $ digitToInt c, cs)
               | otherwise = Nothing
 
@@ -54,7 +54,7 @@ num = maybe id (const negate) <$> optional (char '-') <*> (toInteger <$> some di
 space :: Parser ()
 space = State $ parseSpace
     where parseSpace [] = Nothing
-          parseSpace s@(c:cs)
+          parseSpace (c:cs)
               | isSpace c = Just ((), cs)
               | otherwise = Nothing
 
@@ -84,7 +84,7 @@ eof = State parseEof
 parseExpr :: Parser Expr
 parseExpr = eatSpace *>
             ((buildOp <$> nonOp <*> (eatSpace *> op) <*> parseExpr) <|> nonOp)
-    where buildOp x op y = x `op` y
+    where buildOp x op' y = x `op'` y
           nonOp = char '(' *> parseExpr <* char ')' <|> Const <$> num
 
 -- Run a parser over a 'String' returning the parsed value and the
