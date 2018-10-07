@@ -9,9 +9,7 @@ eval (Add l r) = eval l + eval r
 eval (Mul l r) = eval l * eval r
 
 evalStr :: String -> Maybe Integer
-evalStr s = case parseExp Lit Add Mul s of
-                Just expr -> Just (eval expr)
-                _         -> Nothing
+evalStr s = return . eval =<< parseExp Lit Add Mul s
 
 class Expr a where
     lit :: Integer -> a
