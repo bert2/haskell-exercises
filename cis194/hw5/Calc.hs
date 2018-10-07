@@ -1,7 +1,10 @@
+{-# LANGUAGE FlexibleInstances #-}
+
 module Calc where
 
 import ExprT
 import Parser
+import qualified StackVM as St
 
 eval :: ExprT -> Integer
 eval (Lit x) = x
@@ -44,3 +47,11 @@ instance Expr Mod7 where
     lit                   = Mod7 . (`mod` 7)
     add (Mod7 x) (Mod7 y) = lit (x + y)
     mul (Mod7 x) (Mod7 y) = lit (x * y)
+
+instance Expr St.Program where
+    lit x   = [St.PushI x]
+    add x y = x ++ y ++ [St.Add]
+    mul x y = x ++ y ++ [St.Mul]
+
+compile :: String -> Maybe St.Program
+compile = parseExp lit add mul
