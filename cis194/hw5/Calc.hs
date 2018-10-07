@@ -74,15 +74,17 @@ instance Expr ExprT' where
 instance HasVars ExprT' where
     var = Var'
 
-instance HasVars (M.Map String Integer -> Maybe Integer) where
+type Mapping = M.Map String Integer -> Maybe Integer
+
+instance HasVars Mapping where
     var = M.lookup
 
-instance Expr (M.Map String Integer -> Maybe Integer) where
+instance Expr Mapping where
     lit x   = \_ -> Just x
     add x y = \m -> case (x m, y m) of (Just x', Just y') -> Just (x' + y')
                                        _                  -> Nothing
     mul x y = \m -> case (x m, y m) of (Just x', Just y') -> Just (x' * y')
                                        _                  -> Nothing
 
-withVars :: [(String, Integer)] -> (M.Map String Integer -> Maybe Integer) -> Maybe Integer
+withVars :: [(String, Integer)] -> Mapping -> Maybe Integer
 withVars vs expr = expr $ M.fromList vs
