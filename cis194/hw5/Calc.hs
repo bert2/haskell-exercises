@@ -13,7 +13,7 @@ eval (Add l r) = eval l + eval r
 eval (Mul l r) = eval l * eval r
 
 evalStr :: String -> Maybe Integer
-evalStr s = return . eval =<< parseExp Lit Add Mul s
+evalStr s = eval <$> parseExp Lit Add Mul s
 
 class Expr a where
     lit :: Integer -> a
@@ -81,10 +81,8 @@ instance HasVars Mapping where
 
 instance Expr Mapping where
     lit x   = \_ -> Just x
-    add x y = \m -> case (x m, y m) of (Just x', Just y') -> Just (x' + y')
-                                       _                  -> Nothing
-    mul x y = \m -> case (x m, y m) of (Just x', Just y') -> Just (x' * y')
-                                       _                  -> Nothing
+    add x y = \m -> (+) <$> x m <*> y m
+    mul x y = \m -> (*) <$> x m <*> y m
 
 withVars :: [(String, Integer)] -> Mapping -> Maybe Integer
 withVars vs expr = expr $ M.fromList vs
