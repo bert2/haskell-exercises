@@ -1,0 +1,1 @@
+<img src="./syllabus.svg">
