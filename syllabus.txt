@@ -8,20 +8,20 @@ digraph learnHaskell {
         labelloc=b;
         color=darkgreen;
 
-        lyah01 [label="Introduction", fontcolor=chartreuse3];
-        lyah02 [label="Starting Out", fontcolor=chartreuse3];
-        lyah03 [label="Types and Typeclasses", fontcolor=chartreuse3];
-        lyah04 [label="Syntax in Functions", fontcolor=chartreuse3];
-        lyah05 [label="Recursion", fontcolor=chartreuse3];
-        lyah06 [label="Higher Order Functions", fontcolor=chartreuse3];
-        lyah07 [label="Modules", fontcolor=chartreuse3];
-        lyah08 [label="Making Our Own Types and Typeclasses"];
-        lyah09 [label="Input and Output"];
-        lyah10 [label="Functionally Solving Problems"];
-        lyah11 [label="Functors, Applicative Functors\nand Monoids"];
-        lyah12 [label="A Fistful of Monads"];
-        lyah13 [label="For a Few Monads More"];
-        lyah14 [label="Zippers"];
+        lyah01 [label="1. Introduction", fontcolor=chartreuse3];
+        lyah02 [label="2. Starting Out", fontcolor=chartreuse3];
+        lyah03 [label="3. Types and Typeclasses", fontcolor=chartreuse3];
+        lyah04 [label="4. Syntax in Functions", fontcolor=chartreuse3];
+        lyah05 [label="5. Recursion", fontcolor=chartreuse3];
+        lyah06 [label="6. Higher Order Functions", fontcolor=chartreuse3];
+        lyah07 [label="7. Modules", fontcolor=chartreuse3];
+        lyah08 [label="8. Making Our Own Types and Typeclasses"];
+        lyah09 [label="9. Input and Output"];
+        lyah10 [label="10. Functionally Solving Problems"];
+        lyah11 [label="11. Functors, Applicative Functors\nand Monoids"];
+        lyah12 [label="12. A Fistful of Monads"];
+        lyah13 [label="13. For a Few Monads More"];
+        lyah14 [label="14. Zippers"];
 
         lyah14->lyah13->lyah12->lyah11->lyah10->lyah09->lyah08->lyah07->lyah06->lyah05->lyah04->lyah03->lyah02->lyah01;
     }
@@ -31,18 +31,18 @@ digraph learnHaskell {
         labelloc=b;
         color=red;
 
-        cis01 [label="Introduction to Haskell", fontcolor=chartreuse3];
-        cis02 [label="Algebraic Data Types", fontcolor=chartreuse3];
-        cis03 [label="Recursion patterns,\npolymorphism, and the Prelude", fontcolor=chartreuse3];
-        cis04 [label="Higher-order programming\nand type inference", fontcolor=chartreuse3];
-        cis05 [label="More polymorphism and\ntype classes", fontcolor=chartreuse3];
-        cis06 [label="Lazy evaluation"];
-        cis07 [label="Folds and monoids"];
-        cis08 [label="IO"];
-        cis09 [label="Functors"];
-        cis10 [label="Applicative functors II"];
-        cis11 [label="Applicative functors I"];
-        cis12 [label="Monads"];
+        cis01 [label="1. Introduction to Haskell", fontcolor=chartreuse3];
+        cis02 [label="2. Algebraic Data Types", fontcolor=chartreuse3];
+        cis03 [label="3. Recursion patterns,\npolymorphism, and the Prelude", fontcolor=chartreuse3];
+        cis04 [label="4. Higher-order programming\nand type inference", fontcolor=chartreuse3];
+        cis05 [label="5. More polymorphism and\ntype classes", fontcolor=chartreuse3];
+        cis06 [label="6. Lazy evaluation"];
+        cis07 [label="7. Folds and monoids"];
+        cis08 [label="8. IO"];
+        cis09 [label="9. Functors"];
+        cis10 [label="10. Applicative functors II"];
+        cis11 [label="11. Applicative functors I"];
+        cis12 [label="12. Monads"];
 
         cis12->cis11->cis10->cis09->cis08->cis07->cis06->cis05->cis04->cis03->cis02->cis01;
     }
@@ -52,34 +52,34 @@ digraph learnHaskell {
         labelloc=b;
         color = blue;
 
-        rwh01 [label="Getting started", fontcolor=chartreuse3];
-        rwh02 [label="Types and functions", fontcolor=chartreuse3];
-        rwh03 [label="Defining types,\nstreamlining functions", fontcolor=chartreuse3]
-        rwh04 [label="Functional programming", fontcolor=orange];
-        rwh05 [label="Writing a library:\nworking with JSON data"];
-        rwh06 [label="Using typeclasses"];
-        rwh07 [label="Input and output"];
-        rwh08 [label="Efficient file processing, regular\nexpressions, and file name matching"];
-        rwh09 [label="I/O case study:\na library for searching the filesystem"];
-        rwh10 [label="Code case study:\nparsing a binary data format"];
-        rwh11 [label="Testing and quality assurance"];
-        rwh12 [label="Barcode recognition"];
-        rwh13 [label="Data structures"];
-        rwh14 [label="Monads"];
-        rwh15 [label="Programming with monads"];
-        // rwh16 [label="The Parsec parsing library"];
-        // rwh17 [label="The foreign function interface"];
-        // rwh18 [label="Monad transformers"];
-        // rwh19 [label="Error handling"];
-        // rwh20 [label="Systems programming"];
-        // rwh21 [label="Working with databases"];
-        // rwh22 [label="Web client programming"];
-        // rwh23 [label="GUI programming"];
-        // rwh24 [label="Basic concurrent and\nparallel programming"];
-        // rwh25 [label="Profiling and tuning\nfor performance"];
-        // rwh26 [label="Advanced library design:\nbuilding a Bloom filter"];
-        // rwh27 [label="Network programming"];
-        // rwh28 [label="Software transactional memory"];
+        rwh01 [label="1. Getting started", fontcolor=chartreuse3];
+        rwh02 [label="2. Types and functions", fontcolor=chartreuse3];
+        rwh03 [label="3. Defining types,\nstreamlining functions", fontcolor=chartreuse3]
+        rwh04 [label="4. Functional programming", fontcolor=orange];
+        rwh05 [label="5. Writing a library:\nworking with JSON data"];
+        rwh06 [label="6. Using typeclasses"];
+        rwh07 [label="7. Input and output"];
+        rwh08 [label="8. Efficient file processing, regular\nexpressions, and file name matching"];
+        rwh09 [label="9. I/O case study:\na library for searching the filesystem"];
+        rwh10 [label="10. Code case study:\nparsing a binary data format"];
+        rwh11 [label="11. Testing and quality assurance"];
+        rwh12 [label="12. Barcode recognition"];
+        rwh13 [label="13. Data structures"];
+        rwh14 [label="14. Monads"];
+        rwh15 [label="15. Programming with monads"];
+        // rwh16 [label="16. The Parsec parsing library"];
+        // rwh17 [label="17. The foreign function interface"];
+        // rwh18 [label="18. Monad transformers"];
+        // rwh19 [label="19. Error handling"];
+        // rwh20 [label="20. Systems programming"];
+        // rwh21 [label="21. Working with databases"];
+        // rwh22 [label="22. Web client programming"];
+        // rwh23 [label="23. GUI programming"];
+        // rwh24 [label="24. Basic concurrent and\nparallel programming"];
+        // rwh25 [label="25. Profiling and tuning\nfor performance"];
+        // rwh26 [label="26. Advanced library design:\nbuilding a Bloom filter"];
+        // rwh27 [label="27. Network programming"];
+        // rwh28 [label="28. Software transactional memory"];
 
         //rwh28->rwh27->rwh26->rwh25->rwh24->rwh23->rwh22->rwh21->rwh20->rwh19->rwh18->rwh17->rwh16->
         "..."->rwh15->rwh14->rwh13->rwh12->rwh11->rwh10->rwh09->rwh08->rwh07->rwh06->rwh05->rwh04->rwh03->rwh02->rwh01;
