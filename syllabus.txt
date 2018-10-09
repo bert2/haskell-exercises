@@ -14,7 +14,7 @@ digraph learnHaskell {
         lyah04 [label="Syntax in Functions", fontcolor=chartreuse3];
         lyah05 [label="Recursion", fontcolor=chartreuse3];
         lyah06 [label="Higher Order Functions", fontcolor=chartreuse3];
-        lyah07 [label="Modules"];
+        lyah07 [label="Modules", fontcolor=chartreuse3];
         lyah08 [label="Making Our Own Types and Typeclasses"];
         lyah09 [label="Input and Output"];
         lyah10 [label="Functionally Solving Problems"];
@@ -55,7 +55,7 @@ digraph learnHaskell {
         rwh01 [label="Getting started", fontcolor=chartreuse3];
         rwh02 [label="Types and functions", fontcolor=chartreuse3];
         rwh03 [label="Defining types,\nstreamlining functions", fontcolor=chartreuse3]
-        rwh04 [label="Functional programming"];
+        rwh04 [label="Functional programming", fontcolor=orange];
         rwh05 [label="Writing a library:\nworking with JSON data"];
         rwh06 [label="Using typeclasses"];
         rwh07 [label="Input and output"];
