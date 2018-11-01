@@ -98,7 +98,7 @@
 <!-- lyah08 -->
 <g id="node8" class="node">
 <title>lyah08</title>
-<text text-anchor="middle" x="159" y="-697.4" font-family="Times,serif" font-size="14.00" fill="#000000">8. Making Our Own Types and Typeclasses</text>
+<text text-anchor="middle" x="159" y="-697.4" font-family="Times,serif" font-size="14.00" fill="#ffa500">8. Making Our Own Types and Typeclasses</text>
 </g>
 <!-- lyah08&#45;&gt;lyah07 -->
 <g id="edge7" class="edge">
@@ -456,7 +456,7 @@
 <!-- rwh04 -->
 <g id="node30" class="node">
 <title>rwh04</title>
-<text text-anchor="middle" x="749" y="-923.8" font-family="Times,serif" font-size="14.00" fill="#ffa500">4. Functional programming</text>
+<text text-anchor="middle" x="749" y="-923.8" font-family="Times,serif" font-size="14.00" fill="#66cd00">4. Functional programming</text>
 </g>
 <!-- rwh04&#45;&gt;rwh03 -->
 <g id="edge37" class="edge">
