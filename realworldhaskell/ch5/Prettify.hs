@@ -2,7 +2,7 @@ module Prettify
     (
         Doc(), empty, char, text, double, line, softline,
         (<>), (</>), fold, hcat, fsep, punctuate,
-        compact, pretty
+        compact, pretty, fill
     ) where
 
 import Prelude hiding ((<>))
@@ -98,3 +98,6 @@ w `fits` _ | w < 0 = False
 w `fits` ""        = True
 w `fits` ('\n':_)  = True
 w `fits` (c:cs)    = (w - 1) `fits` cs
+
+-- The exercises (http://book.realworldhaskell.org/read/writing-a-library-working-with-json-data.html#id601782) are unclear to me.
+-- I'll have to read and implement "A Pretty Printer" by Phillip Wadler first (https://homepages.inf.ed.ac.uk/wadler/papers/prettier/prettier.pdf).
