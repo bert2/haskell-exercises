@@ -15,7 +15,7 @@ digraph learnHaskell {
         lyah05 [label="5. Recursion", fontcolor=chartreuse3];
         lyah06 [label="6. Higher Order Functions", fontcolor=chartreuse3];
         lyah07 [label="7. Modules", fontcolor=chartreuse3];
-        lyah08 [label="8. Making Our Own Types and Typeclasses", fontcolor=orange];
+        lyah08 [label="8. Making Our Own Types and Typeclasses", fontcolor=chartreuse3];
         lyah09 [label="9. Input and Output"];
         lyah10 [label="10. Functionally Solving Problems"];
         lyah11 [label="11. Functors, Applicative Functors\nand Monoids"];
@@ -56,8 +56,8 @@ digraph learnHaskell {
         rwh02 [label="2. Types and functions", fontcolor=chartreuse3];
         rwh03 [label="3. Defining types,\nstreamlining functions", fontcolor=chartreuse3]
         rwh04 [label="4. Functional programming", fontcolor=chartreuse3];
-        rwh05 [label="5. Writing a library:\nworking with JSON data"];
-        rwh06 [label="6. Using typeclasses"];
+        rwh05 [label="5. Writing a library:\nworking with JSON data", fontcolor=orange];
+        rwh06 [label="6. Using typeclasses", fontcolor=orange];
         rwh07 [label="7. Input and output"];
         rwh08 [label="8. Efficient file processing, regular\nexpressions, and file name matching"];
         rwh09 [label="9. I/O case study:\na library for searching the filesystem"];
