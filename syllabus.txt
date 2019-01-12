@@ -36,8 +36,8 @@ digraph learnHaskell {
         cis03 [label="3. Recursion patterns,\npolymorphism, and the Prelude", fontcolor=chartreuse3];
         cis04 [label="4. Higher-order programming\nand type inference", fontcolor=chartreuse3];
         cis05 [label="5. More polymorphism and\ntype classes", fontcolor=chartreuse3];
-        cis06 [label="6. Lazy evaluation"];
-        cis07 [label="7. Folds and monoids"];
+        cis06 [label="6. Lazy evaluation", fontcolor=chartreuse3];
+        cis07 [label="7. Folds and monoids", fontcolor=orange];
         cis08 [label="8. IO"];
         cis09 [label="9. Functors"];
         cis10 [label="10. Applicative functors II"];

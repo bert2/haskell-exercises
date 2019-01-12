@@ -280,7 +280,7 @@
 <!-- cis06 -->
 <g id="node20" class="node">
 <title>cis06</title>
-<text text-anchor="middle" x="486" y="-464.6" font-family="Times,serif" font-size="14.00" fill="#000000">6. Lazy evaluation</text>
+<text text-anchor="middle" x="486" y="-464.6" font-family="Times,serif" font-size="14.00" fill="#66cd00">6. Lazy evaluation</text>
 </g>
 <!-- cis06&#45;&gt;cis05 -->
 <g id="edge20" class="edge">
@@ -291,7 +291,7 @@
 <!-- cis07 -->
 <g id="node21" class="node">
 <title>cis07</title>
-<text text-anchor="middle" x="480" y="-389.8" font-family="Times,serif" font-size="14.00" fill="#000000">7. Folds and monoids</text>
+<text text-anchor="middle" x="480" y="-389.8" font-family="Times,serif" font-size="14.00" fill="#ffa500">7. Folds and monoids</text>
 </g>
 <!-- cis07&#45;&gt;lyah06 -->
 <g id="edge46" class="edge">
