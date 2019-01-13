@@ -109,7 +109,7 @@
 <!-- lyah09 -->
 <g id="node9" class="node">
 <title>lyah09</title>
-<text text-anchor="middle" x="160" y="-619.8" font-family="Times,serif" font-size="14.00" fill="#000000">9. Input and Output</text>
+<text text-anchor="middle" x="160" y="-619.8" font-family="Times,serif" font-size="14.00" fill="#ffa500">9. Input and Output</text>
 </g>
 <!-- lyah09&#45;&gt;lyah08 -->
 <g id="edge6" class="edge">
@@ -291,7 +291,7 @@
 <!-- cis07 -->
 <g id="node21" class="node">
 <title>cis07</title>
-<text text-anchor="middle" x="480" y="-389.8" font-family="Times,serif" font-size="14.00" fill="#ffa500">7. Folds and monoids</text>
+<text text-anchor="middle" x="480" y="-389.8" font-family="Times,serif" font-size="14.00" fill="#000000">7. Folds and monoids</text>
 </g>
 <!-- cis07&#45;&gt;lyah06 -->
 <g id="edge46" class="edge">

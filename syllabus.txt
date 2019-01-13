@@ -16,7 +16,7 @@ digraph learnHaskell {
         lyah06 [label="6. Higher Order Functions", fontcolor=chartreuse3];
         lyah07 [label="7. Modules", fontcolor=chartreuse3];
         lyah08 [label="8. Making Our Own Types and Typeclasses", fontcolor=chartreuse3];
-        lyah09 [label="9. Input and Output"];
+        lyah09 [label="9. Input and Output", fontcolor=orange];
         lyah10 [label="10. Functionally Solving Problems"];
         lyah11 [label="11. Functors, Applicative Functors\nand Monoids"];
         lyah12 [label="12. A Fistful of Monads"];
@@ -37,7 +37,7 @@ digraph learnHaskell {
         cis04 [label="4. Higher-order programming\nand type inference", fontcolor=chartreuse3];
         cis05 [label="5. More polymorphism and\ntype classes", fontcolor=chartreuse3];
         cis06 [label="6. Lazy evaluation", fontcolor=chartreuse3];
-        cis07 [label="7. Folds and monoids", fontcolor=orange];
+        cis07 [label="7. Folds and monoids"];
         cis08 [label="8. IO"];
         cis09 [label="9. Functors"];
         cis10 [label="10. Applicative functors II"];
